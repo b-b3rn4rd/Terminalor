@@ -1,0 +1,788 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class Terminalor_Response_Styles_Interface</title>
+			<link rel="stylesheet" href="../../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Interface Terminalor_Response_Styles_Interface</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Terminator Response Styles class responsible for managing colors and styles  which are used in decorating user messages</p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Bernard Baltrusaitis &lt;<a href="mailto:bernard@runawaylover.info">bernard@runawaylover.info</a>&gt;</li>
+				<li><span class="field">link:</span> <a href="http://terminalor.runawaylover.info">http://terminalor.runawaylover.info</a></li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_Response---Styles---Interface.php.html">/Response/Styles/Interface.php</a> (line <span class="field">18</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+												<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																																																																												
+												<div class="method-definition">
+											<span class="method-result"><a href="../../Terminalor/Response/Terminalor_Response_Styles_Interface.html">Terminalor_Response_Styles_Interface</a></span>
+										<a href="#addStyle" title="details" class="method-name">addStyle</a>
+											(<span class="var-type"><a href="../../Terminalor/Response/Terminalor_Response_Styles_Entity_Interface.html">Terminalor_Response_Styles_Entity_Interface</a></span>&nbsp;<span class="var-name">$style</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#backgroundExists" title="details" class="method-name">backgroundExists</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$backgroundName</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#colorExists" title="details" class="method-name">colorExists</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$colorName</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getBackgroundByName" title="details" class="method-name">getBackgroundByName</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$backgroundName</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getBackgrounds" title="details" class="method-name">getBackgrounds</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getColorByName" title="details" class="method-name">getColorByName</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$colorName</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getColors" title="details" class="method-name">getColors</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getDefaultBackground" title="details" class="method-name">getDefaultBackground</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getDefaultColor" title="details" class="method-name">getDefaultColor</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getDefaultStyleName" title="details" class="method-name">getDefaultStyleName</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../../Terminalor/Response/Terminalor_Response_Styles_Entity_Interface.html">Terminalor_Response_Styles_Entity_Interface</a></span>
+										<a href="#getEntity" title="details" class="method-name">getEntity</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../../Terminalor/Response/Terminalor_Response_Styles_Entity_Interface.html">Terminalor_Response_Styles_Entity_Interface</a></span>
+										<a href="#getStyleByName" title="details" class="method-name">getStyleByName</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$styleName</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getStyles" title="details" class="method-name">getStyles</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../../Terminalor/Response/Terminalor_Response_Styles_Entity_Interface.html">Terminalor_Response_Styles_Entity_Interface</a></span>
+										<a href="#getStyleValues" title="details" class="method-name">getStyleValues</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$styleName</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../../Terminalor/Response/Terminalor_Response_Styles_Interface.html">Terminalor_Response_Styles_Interface</a></span>
+										<a href="#installBackground" title="details" class="method-name">installBackground</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$backgroundName</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$backgroundValue</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../../Terminalor/Response/Terminalor_Response_Styles_Interface.html">Terminalor_Response_Styles_Interface</a></span>
+										<a href="#installColor" title="details" class="method-name">installColor</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$colorName</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$colorValue</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../../Terminalor/Response/Terminalor_Response_Styles_Interface.html">Terminalor_Response_Styles_Interface</a></span>
+										<a href="#removeStyle" title="details" class="method-name">removeStyle</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$styleName</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../../Terminalor/Response/Terminalor_Response_Styles_Interface.html">Terminalor_Response_Styles_Interface</a></span>
+										<a href="#setDefaultBackground" title="details" class="method-name">setDefaultBackground</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$backgroundName</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../../Terminalor/Response/Terminalor_Response_Styles_Interface.html">Terminalor_Response_Styles_Interface</a></span>
+										<a href="#setDefaultColor" title="details" class="method-name">setDefaultColor</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$colorName</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../../Terminalor/Response/Terminalor_Response_Styles_Interface.html">Terminalor_Response_Styles_Interface</a></span>
+										<a href="#setDefaultStyle" title="details" class="method-name">setDefaultStyle</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$styleName</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#styleExists" title="details" class="method-name">styleExists</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$styleName</span>)
+									</div>
+								</div>
+		</div>
+	</div>		
+
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+
+<a name="methodaddStyle" id="addStyle"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">addStyle</span> (line <span class="line-number">113</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Install or replace style</p>
+	<ul class="tags">
+				<li><span class="field">throws:</span> InvalidArgumentException if given style id eq. null</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../Terminalor/Response/Terminalor_Response_Styles_Interface.html">Terminalor_Response_Styles_Interface</a></span>
+		<span class="method-name">
+			addStyle
+		</span>
+					(<span class="var-type"><a href="../../Terminalor/Response/Terminalor_Response_Styles_Entity_Interface.html">Terminalor_Response_Styles_Entity_Interface</a></span>&nbsp;<span class="var-name">$style</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../../Terminalor/Response/Terminalor_Response_Styles_Entity_Interface.html">Terminalor_Response_Styles_Entity_Interface</a></span>
+				<span class="var-name">$style</span><span class="var-description">: new style</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodbackgroundExists" id="backgroundExists"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">backgroundExists</span> (line <span class="line-number">195</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Check if background with given name is defined</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			backgroundExists
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$backgroundName</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$backgroundName</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcolorExists" id="colorExists"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">colorExists</span> (line <span class="line-number">179</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Check if color with given name is defined</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			colorExists
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$colorName</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$colorName</span><span class="var-description">: color name</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetBackgroundByName" id="getBackgroundByName"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getBackgroundByName</span> (line <span class="line-number">104</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get defined background by name  <strong>This method returns background value</strong></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> background value</li>
+				<li><span class="field">throws:</span> InvalidArgumentException if given background doesn't exists</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getBackgroundByName
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$backgroundName</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$backgroundName</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetBackgrounds" id="getBackgrounds"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getBackgrounds</span> (line <span class="line-number">32</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get array of defined backgrounds</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> defined backgrounds</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getBackgrounds
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetColorByName" id="getColorByName"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getColorByName</span> (line <span class="line-number">94</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get defined color value by name</p>
+<p class="description"><p><strong>This method returns color value</strong>  <div class="src-code"><ol><li><div class="src-line">&nbsp;echo&nbsp;<span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../../Terminalor/Response/Terminalor_Response_Styles_Interface.html#methodgetColorByName">getColorByName</a><span class="src-sym">(</span><span class="src-str">'red'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-comm">//&nbsp;output&nbsp;0;31</span></div></li>
+</ol></div></p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> color value</li>
+				<li><span class="field">throws:</span> InvalidArgumentException if color with given name doesn't exists</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getColorByName
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$colorName</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$colorName</span><span class="var-description">: color name</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetColors" id="getColors"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getColors</span> (line <span class="line-number">25</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get array of defined colors</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> defined colors</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getColors
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetDefaultBackground" id="getDefaultBackground"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getDefaultBackground</span> (line <span class="line-number">171</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get default background name</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> background name</li>
+				<li><span class="field">see:</span> setDefaultBackground() how to specify default background</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getDefaultBackground
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetDefaultColor" id="getDefaultColor"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getDefaultColor</span> (line <span class="line-number">163</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get default color name</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> color name</li>
+				<li><span class="field">see:</span> setDefaultColor() how to specify default color</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getDefaultColor
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetDefaultStyleName" id="getDefaultStyleName"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getDefaultStyleName</span> (line <span class="line-number">130</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get default style name</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> style name</li>
+				<li><span class="field">see:</span> setDefaultStyle how to specify default style</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getDefaultStyleName
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetEntity" id="getEntity"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getEntity</span> (line <span class="line-number">39</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get style entity object</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../Terminalor/Response/Terminalor_Response_Styles_Entity_Interface.html">Terminalor_Response_Styles_Entity_Interface</a></span>
+		<span class="method-name">
+			getEntity
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetStyleByName" id="getStyleByName"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getStyleByName</span> (line <span class="line-number">55</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get style object by name</p>
+	<ul class="tags">
+				<li><span class="field">throws:</span> InvalidArgumentException if style with given name doesn't exists</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../Terminalor/Response/Terminalor_Response_Styles_Entity_Interface.html">Terminalor_Response_Styles_Entity_Interface</a></span>
+		<span class="method-name">
+			getStyleByName
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$styleName</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$styleName</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetStyles" id="getStyles"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getStyles</span> (line <span class="line-number">46</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get array of defined styles</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> defined styles</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getStyles
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetStyleValues" id="getStyleValues"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getStyleValues</span> (line <span class="line-number">203</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get style object with values by given name</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> style object</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../Terminalor/Response/Terminalor_Response_Styles_Entity_Interface.html">Terminalor_Response_Styles_Entity_Interface</a></span>
+		<span class="method-name">
+			getStyleValues
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$styleName</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$styleName</span><span class="var-description">: style name</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodinstallBackground" id="installBackground"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">installBackground</span> (line <span class="line-number">80</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Install or replace background color</p>
+<p class="description"><p><div class="src-code"><ol><li><div class="src-line">&nbsp;<span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../../Terminalor/Response/Terminalor_Response_Styles_Interface.html#methodinstallBackground">installBackground</a><span class="src-sym">(</span><span class="src-str">'red'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'41'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+</ol></div></p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../Terminalor/Response/Terminalor_Response_Styles_Interface.html">Terminalor_Response_Styles_Interface</a></span>
+		<span class="method-name">
+			installBackground
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$backgroundName</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$backgroundValue</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$backgroundName</span><span class="var-description">: new background name</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$backgroundValue</span><span class="var-description">: new bacgroudn value</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodinstallColor" id="installColor"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">installColor</span> (line <span class="line-number">68</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Install or replace color</p>
+<p class="description"><p><div class="src-code"><ol><li><div class="src-line">&nbsp;<span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../../Terminalor/Response/Terminalor_Response_Styles_Interface.html#methodinstallColor">installColor</a><span class="src-sym">(</span><span class="src-str">'red'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'0;31'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+</ol></div></p></p>
+	<ul class="tags">
+				<li><span class="field">throws:</span> InvalidArgumentException if $colorValue has invalid value</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../Terminalor/Response/Terminalor_Response_Styles_Interface.html">Terminalor_Response_Styles_Interface</a></span>
+		<span class="method-name">
+			installColor
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$colorName</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$colorValue</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$colorName</span><span class="var-description">: new color name</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$colorValue</span><span class="var-description">: new color value</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodremoveStyle" id="removeStyle"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">removeStyle</span> (line <span class="line-number">122</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Remove defined style by name</p>
+	<ul class="tags">
+				<li><span class="field">throws:</span> InvalidArgumentException if given style doesnt exists</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../Terminalor/Response/Terminalor_Response_Styles_Interface.html">Terminalor_Response_Styles_Interface</a></span>
+		<span class="method-name">
+			removeStyle
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$styleName</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$styleName</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetDefaultBackground" id="setDefaultBackground"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setDefaultBackground</span> (line <span class="line-number">155</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set default background name</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../Terminalor/Response/Terminalor_Response_Styles_Interface.html">Terminalor_Response_Styles_Interface</a></span>
+		<span class="method-name">
+			setDefaultBackground
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$backgroundName</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$backgroundName</span><span class="var-description">: background name</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetDefaultColor" id="setDefaultColor"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setDefaultColor</span> (line <span class="line-number">147</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set default color</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../Terminalor/Response/Terminalor_Response_Styles_Interface.html">Terminalor_Response_Styles_Interface</a></span>
+		<span class="method-name">
+			setDefaultColor
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$colorName</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$colorName</span><span class="var-description">: color name</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetDefaultStyle" id="setDefaultStyle"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setDefaultStyle</span> (line <span class="line-number">139</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set default style name</p>
+	<ul class="tags">
+				<li><span class="field">throws:</span> InvalidArgumentException if given style name doesnt exists</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../Terminalor/Response/Terminalor_Response_Styles_Interface.html">Terminalor_Response_Styles_Interface</a></span>
+		<span class="method-name">
+			setDefaultStyle
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$styleName</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$styleName</span><span class="var-description">: style</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodstyleExists" id="styleExists"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">styleExists</span> (line <span class="line-number">187</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Check if style with given name is defined</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			styleExists
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$styleName</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$styleName</span><span class="var-description">: style name</span>			</li>
+				</ul>
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Mon, 30 Jan 2012 14:55:07 +1100 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.4</a>
+	</p>
+	</div></body>
+</html>

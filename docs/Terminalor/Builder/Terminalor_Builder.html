@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class Terminalor_Builder</title>
+			<link rel="stylesheet" href="../../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class Terminalor_Builder</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-vars">Vars</a>
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+		<p class="notes">
+			Located in <a class="field" href="_Builder.php.html">/Builder.php</a> (line <span class="field">20</span>)
+		</p>
+		
+				
+		<pre><a href="../../Terminalor/Builder/Terminalor_Builder_Abstract.html">Terminalor_Builder_Abstract</a>
+   |
+   --Terminalor_Builder</pre>
+	
+			</div>
+</div>
+
+
+
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-vars">Vars</a>
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																				
+												<div class="method-definition">
+											<span class="method-result">null</span>
+										<a href="#build" title="details" class="method-name">build</a>
+											([<span class="var-type">array</span>&nbsp;<span class="var-name">$commands</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">null</span>
+										<a href="#includeDirectoryForBuild" title="details" class="method-name">includeDirectoryForBuild</a>
+											(<span class="var-type">RecursiveIteratorIterator</span>&nbsp;<span class="var-name">$iterator</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$minimizeSource</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">null</span>
+										<a href="#includeFileForBuild" title="details" class="method-name">includeFileForBuild</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$filename</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$minimizeSource</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">null</span>
+										<a href="#saveBuildSource" title="details" class="method-name">saveBuildSource</a>
+										()
+									</div>
+								</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+										<h4>Inherited Variables</h4>
+				<A NAME='inherited_vars'><!-- --></A>
+									<p>Inherited from <span class="classname"><a href="../../Terminalor/Builder/Terminalor_Builder_Abstract.html">Terminalor_Builder_Abstract</a></span></p>
+					<blockquote>
+													<span class="var-title">
+								<span class="var-name"><a href="../../Terminalor/Builder/Terminalor_Builder_Abstract.html#var$_buildHeader">Terminalor_Builder_Abstract::$_buildHeader</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../Terminalor/Builder/Terminalor_Builder_Abstract.html#var$_buildSource">Terminalor_Builder_Abstract::$_buildSource</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../Terminalor/Builder/Terminalor_Builder_Abstract.html#var$_minimizeSource">Terminalor_Builder_Abstract::$_minimizeSource</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../Terminalor/Builder/Terminalor_Builder_Abstract.html#var$_sourceFilename">Terminalor_Builder_Abstract::$_sourceFilename</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../../Terminalor/Builder/Terminalor_Builder_Abstract.html#var$_targetFilename">Terminalor_Builder_Abstract::$_targetFilename</a></span><br>
+							</span>
+											</blockquote> 
+										
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-vars">Vars</a>
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+
+<a name="methodbuild" id="build"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">build</span> (line <span class="line-number">34</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Builds protable php cli file, method will run all commands</p>
+<p class="description"><p>with specified params in $commands, all files included in build will be  minimized if @see isMinimizeSource() is true, all static includes will be  commented out. If default params are not specified in $commands null value  will be sent. You can change behavior of your command using _TERMINALOR_BUILDER_  constant which is true using building process.</p></p>
+	<ul class="tags">
+				<li><span class="field">throws:</span> UnexpectedValueException if source is not readable</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">null</span>
+		<span class="method-name">
+			build
+		</span>
+					([<span class="var-type">array</span>&nbsp;<span class="var-name">$commands</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$commands</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../../Terminalor/Builder/Terminalor_Builder_Abstract.html#methodbuild">Terminalor_Builder_Abstract::build()</a></dt>
+						<dd>Builds protable php cli file, method will run all given commands  from $commands with specified params</dd>
+					</dl>
+			
+	</div>
+<a name="methodincludeDirectoryForBuild" id="includeDirectoryForBuild"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">includeDirectoryForBuild</span> (line <span class="line-number">139</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Include files in directory for build, this method is wrapper for  includeFileForBuild()</p>
+	<ul class="tags">
+				<li><span class="field">see:</span> includeFileForBuild() how file is included</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">null</span>
+		<span class="method-name">
+			includeDirectoryForBuild
+		</span>
+					(<span class="var-type">RecursiveIteratorIterator</span>&nbsp;<span class="var-name">$iterator</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$minimizeSource</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">RecursiveIteratorIterator</span>
+				<span class="var-name">$iterator</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$minimizeSource</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodincludeFileForBuild" id="includeFileForBuild"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">includeFileForBuild</span> (line <span class="line-number">122</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Include file for build, file source open/close tags will be stripped  all includes commented out if $minimizeSource is true then file source  will be minimized</p>
+	<ul class="tags">
+				<li><span class="field">see:</span> getBuildSource() to check if file source was included</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">null</span>
+		<span class="method-name">
+			includeFileForBuild
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$filename</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$minimizeSource</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$filename</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$minimizeSource</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsaveBuildSource" id="saveBuildSource"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">saveBuildSource</span> (line <span class="line-number">92</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Save build content</p>
+	<ul class="tags">
+				<li><span class="field">throws:</span> UnexpectedValueException if build target is not writable</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">null</span>
+		<span class="method-name">
+			saveBuildSource
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../../Terminalor/Builder/Terminalor_Builder_Abstract.html">Terminalor_Builder_Abstract</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../../Terminalor/Builder/Terminalor_Builder_Abstract.html#method__construct">Terminalor_Builder_Abstract::__construct()</a></span><br>
+													<span class="method-name"><a href="../../Terminalor/Builder/Terminalor_Builder_Abstract.html#methodaddExcludeClassPattern">Terminalor_Builder_Abstract::addExcludeClassPattern()</a></span><br>
+													<span class="method-name"><a href="../../Terminalor/Builder/Terminalor_Builder_Abstract.html#methodaddIncludeClassPattern">Terminalor_Builder_Abstract::addIncludeClassPattern()</a></span><br>
+													<span class="method-name"><a href="../../Terminalor/Builder/Terminalor_Builder_Abstract.html#methodappendBuildSource">Terminalor_Builder_Abstract::appendBuildSource()</a></span><br>
+													<span class="method-name"><a href="../../Terminalor/Builder/Terminalor_Builder_Abstract.html#methodbuild">Terminalor_Builder_Abstract::build()</a></span><br>
+													<span class="method-name"><a href="../../Terminalor/Builder/Terminalor_Builder_Abstract.html#methodclassIsAllowed">Terminalor_Builder_Abstract::classIsAllowed()</a></span><br>
+													<span class="method-name"><a href="../../Terminalor/Builder/Terminalor_Builder_Abstract.html#methodgetBootstrapString">Terminalor_Builder_Abstract::getBootstrapString()</a></span><br>
+													<span class="method-name"><a href="../../Terminalor/Builder/Terminalor_Builder_Abstract.html#methodgetBuildHeader">Terminalor_Builder_Abstract::getBuildHeader()</a></span><br>
+													<span class="method-name"><a href="../../Terminalor/Builder/Terminalor_Builder_Abstract.html#methodgetBuildSource">Terminalor_Builder_Abstract::getBuildSource()</a></span><br>
+													<span class="method-name"><a href="../../Terminalor/Builder/Terminalor_Builder_Abstract.html#methodgetExcludeClassesPatterns">Terminalor_Builder_Abstract::getExcludeClassesPatterns()</a></span><br>
+													<span class="method-name"><a href="../../Terminalor/Builder/Terminalor_Builder_Abstract.html#methodgetFileSource">Terminalor_Builder_Abstract::getFileSource()</a></span><br>
+													<span class="method-name"><a href="../../Terminalor/Builder/Terminalor_Builder_Abstract.html#methodgetIncludeClassesPatterns">Terminalor_Builder_Abstract::getIncludeClassesPatterns()</a></span><br>
+													<span class="method-name"><a href="../../Terminalor/Builder/Terminalor_Builder_Abstract.html#methodgetOpenPhpTag">Terminalor_Builder_Abstract::getOpenPhpTag()</a></span><br>
+													<span class="method-name"><a href="../../Terminalor/Builder/Terminalor_Builder_Abstract.html#methodgetSourceFilename">Terminalor_Builder_Abstract::getSourceFilename()</a></span><br>
+													<span class="method-name"><a href="../../Terminalor/Builder/Terminalor_Builder_Abstract.html#methodgetSourceIncludes">Terminalor_Builder_Abstract::getSourceIncludes()</a></span><br>
+													<span class="method-name"><a href="../../Terminalor/Builder/Terminalor_Builder_Abstract.html#methodgetTargetFilename">Terminalor_Builder_Abstract::getTargetFilename()</a></span><br>
+													<span class="method-name"><a href="../../Terminalor/Builder/Terminalor_Builder_Abstract.html#methodisMinimizeSource">Terminalor_Builder_Abstract::isMinimizeSource()</a></span><br>
+													<span class="method-name"><a href="../../Terminalor/Builder/Terminalor_Builder_Abstract.html#methodprependBuildSource">Terminalor_Builder_Abstract::prependBuildSource()</a></span><br>
+													<span class="method-name"><a href="../../Terminalor/Builder/Terminalor_Builder_Abstract.html#methodsetBuildHeader">Terminalor_Builder_Abstract::setBuildHeader()</a></span><br>
+													<span class="method-name"><a href="../../Terminalor/Builder/Terminalor_Builder_Abstract.html#methodsetBuildSource">Terminalor_Builder_Abstract::setBuildSource()</a></span><br>
+													<span class="method-name"><a href="../../Terminalor/Builder/Terminalor_Builder_Abstract.html#methodsetTargetFilename">Terminalor_Builder_Abstract::setTargetFilename()</a></span><br>
+													<span class="method-name"><a href="../../Terminalor/Builder/Terminalor_Builder_Abstract.html#methodstripPhpTags">Terminalor_Builder_Abstract::stripPhpTags()</a></span><br>
+													<span class="method-name"><a href="../../Terminalor/Builder/Terminalor_Builder_Abstract.html#method_assembleClosureParams">Terminalor_Builder_Abstract::_assembleClosureParams()</a></span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Mon, 30 Jan 2012 14:55:06 +1100 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.4</a>
+	</p>
+	</div></body>
+</html>

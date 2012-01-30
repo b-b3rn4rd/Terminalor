@@ -1,0 +1,725 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class Terminalor_Response</title>
+			<link rel="stylesheet" href="../../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class Terminalor_Response</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+                <p class="implements">
+            Implements interfaces:
+            <ul>
+                <li><a href="../../Terminalor/Response/Terminalor_Response_Interface.html">Terminalor_Response_Interface</a></li>            </ul>
+        </p>
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Terminator Response class responsible for user interactions such as  displaying messages, promt, confirm. And related functionality.</p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Bernard Baltrusaitis &lt;<a href="mailto:bernard@runawaylover.info">bernard@runawaylover.info</a>&gt;</li>
+				<li><span class="field">link:</span> <a href="http://terminalor.runawaylover.info">http://terminalor.runawaylover.info</a></li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_Response.php.html">/Response.php</a> (line <span class="field">18</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+												<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																												
+												<div class="method-definition">
+											<span class="method-result">Terminalor_Response</span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+											(<span class="var-type"><a href="../../Terminalor/Response/Terminalor_Response_Styles_Interface.html">Terminalor_Response_Styles_Interface</a></span>&nbsp;<span class="var-name">$styles</span>, <span class="var-type"><a href="../../Terminalor/DocParser/Terminalor_DocParser_Interface.html">Terminalor_DocParser_Interface</a></span>&nbsp;<span class="var-name">$docParser</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string|boolean</span>
+										<a href="#applyStylePlaceholdersToMessage" title="details" class="method-name">applyStylePlaceholdersToMessage</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$message</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#applyStyleToMessage" title="details" class="method-name">applyStyleToMessage</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$message</span>, [<span class="var-type">string|array</span>&nbsp;<span class="var-name">$messageStyleName</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#confirm" title="details" class="method-name">confirm</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$message</span>, [<span class="var-type">array|string</span>&nbsp;<span class="var-name">$messageStyleName</span> = <span class="var-default">null</span>], [<span class="var-type">string|null</span>&nbsp;<span class="var-name">$promtSign</span> = <span class="var-default">'[Y|N] '</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#createTableFromArray" title="details" class="method-name">createTableFromArray</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$array</span>, [<span class="var-type">Closure</span>&nbsp;<span class="var-name">$function</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">null</span>
+										<a href="#displayHelp" title="details" class="method-name">displayHelp</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$commands</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../../Terminalor/DocParser/Terminalor_DocParser_Interface.html">Terminalor_DocParser_Interface</a></span>
+										<a href="#getDocParser" title="details" class="method-name">getDocParser</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getInputStream" title="details" class="method-name">getInputStream</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getOutputStream" title="details" class="method-name">getOutputStream</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../../Terminalor/Response/Terminalor_Response_Styles_Interface.html">Terminalor_Response_Styles_Interface</a></span>
+										<a href="#getStyle" title="details" class="method-name">getStyle</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#message" title="details" class="method-name">message</a>
+											(<span class="var-type">array|string|object </span>&nbsp;<span class="var-name">$message</span>, [<span class="var-type">array|string</span>&nbsp;<span class="var-name">$messageStyleName</span> = <span class="var-default">null</span>], [<span class="var-type">Closure</span>&nbsp;<span class="var-name">$function</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#promt" title="details" class="method-name">promt</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$message</span>, [<span class="var-type">string|array</span>&nbsp;<span class="var-name">$messageStyleName</span> = <span class="var-default">null</span>], [<span class="var-type">string|null</span>&nbsp;<span class="var-name">$promtSign</span> = <span class="var-default">'&gt; '</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#sendRawMessage" title="details" class="method-name">sendRawMessage</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$message</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../../Terminalor/Response/Terminalor_Response_Interface.html">Terminalor_Response_Interface</a></span>
+										<a href="#setInputStream" title="details" class="method-name">setInputStream</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$filename</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../../Terminalor/Response/Terminalor_Response_Interface.html">Terminalor_Response_Interface</a></span>
+										<a href="#setOutputStream" title="details" class="method-name">setOutputStream</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$filename</span>)
+									</div>
+								</div>
+		</div>
+	</div>		
+
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number">47</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">Terminalor_Response</span>
+		<span class="method-name">
+			__construct
+		</span>
+					(<span class="var-type"><a href="../../Terminalor/Response/Terminalor_Response_Styles_Interface.html">Terminalor_Response_Styles_Interface</a></span>&nbsp;<span class="var-name">$styles</span>, <span class="var-type"><a href="../../Terminalor/DocParser/Terminalor_DocParser_Interface.html">Terminalor_DocParser_Interface</a></span>&nbsp;<span class="var-name">$docParser</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../../Terminalor/Response/Terminalor_Response_Styles_Interface.html">Terminalor_Response_Styles_Interface</a></span>
+				<span class="var-name">$styles</span>			</li>
+					<li>
+				<span class="var-type"><a href="../../Terminalor/DocParser/Terminalor_DocParser_Interface.html">Terminalor_DocParser_Interface</a></span>
+				<span class="var-name">$docParser</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodapplyStylePlaceholdersToMessage" id="applyStylePlaceholdersToMessage"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">applyStylePlaceholdersToMessage</span> (line <span class="line-number">297</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Replace style placeholders in message with actual styles</p>
+<p class="description"><p><div class="src-code"><ol><li><div class="src-line">&nbsp;<span class="src-var">$tag&nbsp;</span>=&nbsp;<span class="src-id"><a href="../../Terminalor/Response/Terminalor_Response_Styles.html">Terminalor_Response_Styles</a></span><span class="src-sym">::</span><span class="src-id">STYLE_TAG</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$message&nbsp;</span>=&nbsp;<span class="src-str">&quot;</span><span class="src-str">hello&nbsp;&lt;<span class="src-var">$tag</span>&nbsp;class=</span><span class="src-str">&quot;</span><span class="src-id">success</span><span class="src-str">&quot;</span><span class="src-str">&gt;world&lt;/<span class="src-var">$tag</span>&gt;</span><span class="src-str">&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$styledMessage&nbsp;</span>=&nbsp;<span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../../Terminalor/Response/Terminalor_Response.html#methodapplyStylePlaceholdersToMessage">applyStylePlaceholdersToMessage</a><span class="src-sym">(</span><span class="src-var">$message</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+</ol></div></p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> message with applied styles or false</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string|boolean</span>
+		<span class="method-name">
+			applyStylePlaceholdersToMessage
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$message</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$message</span><span class="var-description">: with styles placeholders</span>			</li>
+				</ul>
+		
+				<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt><a href="../../Terminalor/Response/Terminalor_Response_Interface.html#methodapplyStylePlaceholdersToMessage">Terminalor_Response_Interface::applyStylePlaceholdersToMessage()</a></dt>
+						<dd>Replace style placeholders in $message with actual styles</dd>
+					</dl>
+			
+	</div>
+<a name="methodapplyStyleToMessage" id="applyStyleToMessage"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">applyStyleToMessage</span> (line <span class="line-number">250</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Apply given style to message</p>
+<p class="description"><p><div class="src-code"><ol><li><div class="src-line">&nbsp;<span class="src-comm">//&nbsp;pass&nbsp;defined&nbsp;style</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$styledMessage&nbsp;</span>=&nbsp;<span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../../Terminalor/Response/Terminalor_Response.html#methodapplyStyleToMessage">applyStyleToMessage</a><span class="src-sym">(</span><span class="src-str">'your&nbsp;message'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'success'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-comm">//&nbsp;pass&nbsp;style&nbsp;options</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$messageStyleName&nbsp;</span>=&nbsp;<span class="src-key">array</span><span class="src-sym">(</span><span class="src-str">'colorName'&nbsp;</span>=&gt;&nbsp;<span class="src-str">'red'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'bold'&nbsp;</span>=&gt;&nbsp;<span class="src-id">true</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$styledMessage&nbsp;</span>=&nbsp;<span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../../Terminalor/Response/Terminalor_Response.html#methodapplyStyleToMessage">applyStyleToMessage</a><span class="src-sym">(</span><span class="src-str">'your&nbsp;message'</span><span class="src-sym">,&nbsp;</span><span class="src-var">$messageStyleName</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+</ol></div></p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> message with applied style</li>
+				<li><span class="field">see:</span> message() how to set $messageStyleName param</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			applyStyleToMessage
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$message</span>, [<span class="var-type">string|array</span>&nbsp;<span class="var-name">$messageStyleName</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$message</span>			</li>
+					<li>
+				<span class="var-type">string|array</span>
+				<span class="var-name">$messageStyleName</span><span class="var-description">: style name to apply</span>			</li>
+				</ul>
+		
+				<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt><a href="../../Terminalor/Response/Terminalor_Response_Interface.html#methodapplyStyleToMessage">Terminalor_Response_Interface::applyStyleToMessage()</a></dt>
+						<dd>Applies given style to the $message</dd>
+					</dl>
+			
+	</div>
+<a name="methodconfirm" id="confirm"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">confirm</span> (line <span class="line-number">225</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Ask's user to confirm given message, $promtSign appends  tip to the message. Will continue to display  confirm until user provides 'y' or 'n'.</p>
+<p class="description"><p><div class="src-code"><ol><li><div class="src-line">&nbsp;<span class="src-comm">//&nbsp;ask&nbsp;user&nbsp;to&nbsp;confirm&nbsp;given&nbsp;$message&nbsp;in&nbsp;green&nbsp;color,</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-comm">//&nbsp;$agree&nbsp;is&nbsp;true&nbsp;if&nbsp;user&nbsp;inputs&nbsp;'y',&nbsp;false&nbsp;if&nbsp;'n'</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$messageStyle&nbsp;</span>=&nbsp;<span class="src-key">array</span><span class="src-sym">(</span><span class="src-str">'colorName'&nbsp;</span>=&gt;&nbsp;<span class="src-str">'green'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$agree&nbsp;</span>=&nbsp;<span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../../Terminalor/Response/Terminalor_Response.html#methodconfirm">confirm</a><span class="src-sym">(</span><span class="src-str">'Do&nbsp;you&nbsp;love&nbsp;beer&nbsp;?'</span><span class="src-sym">,&nbsp;</span><span class="src-var">$messageStyle</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+</ol></div></p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> user choice true if user inputs y</li>
+				<li><span class="field">see:</span> message() how to set $messageStyleName param</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			confirm
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$message</span>, [<span class="var-type">array|string</span>&nbsp;<span class="var-name">$messageStyleName</span> = <span class="var-default">null</span>], [<span class="var-type">string|null</span>&nbsp;<span class="var-name">$promtSign</span> = <span class="var-default">'[Y|N] '</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$message</span><span class="var-description">: user message to confirm</span>			</li>
+					<li>
+				<span class="var-type">array|string</span>
+				<span class="var-name">$messageStyleName</span><span class="var-description">: message style</span>			</li>
+					<li>
+				<span class="var-type">string|null</span>
+				<span class="var-name">$promtSign</span><span class="var-description">: append text with tip</span>			</li>
+				</ul>
+		
+				<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt><a href="../../Terminalor/Response/Terminalor_Response_Interface.html#methodconfirm">Terminalor_Response_Interface::confirm()</a></dt>
+						<dd>Ask's user to confirm given message, $promtSign appends  tip to the message. Will continue to display  confirm message until user provides 'y' or 'n'.</dd>
+					</dl>
+			
+	</div>
+<a name="methodcreateTableFromArray" id="createTableFromArray"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">createTableFromArray</span> (line <span class="line-number">344</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Convert given array into table, array keys will become table column names  if $function is provided it will be applied to each array element in table.</p>
+<p class="description"><p>array will be limited up to 2nd level.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> arrays data represented in the table</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			createTableFromArray
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$array</span>, [<span class="var-type">Closure</span>&nbsp;<span class="var-name">$function</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$array</span><span class="var-description">: array to convert</span>			</li>
+					<li>
+				<span class="var-type">Closure</span>
+				<span class="var-name">$function</span><span class="var-description">: function to apply to each array element</span>			</li>
+				</ul>
+		
+				<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt><a href="../../Terminalor/Response/Terminalor_Response_Interface.html#methodcreateTableFromArray">Terminalor_Response_Interface::createTableFromArray()</a></dt>
+						<dd>Convert given array into table, array keys will become table column names  if $function is provided it will be applied to each array element in table.</dd>
+					</dl>
+			
+	</div>
+<a name="methoddisplayHelp" id="displayHelp"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">displayHelp</span> (line <span class="line-number">318</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Display help for given user defined commands</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">null</span>
+		<span class="method-name">
+			displayHelp
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$commands</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$commands</span><span class="var-description">: array of user defined command</span>			</li>
+				</ul>
+		
+				<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt><a href="../../Terminalor/Response/Terminalor_Response_Interface.html#methoddisplayHelp">Terminalor_Response_Interface::displayHelp()</a></dt>
+						<dd>Display help for given user defined commands</dd>
+					</dl>
+			
+	</div>
+<a name="methodgetDocParser" id="getDocParser"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getDocParser</span> (line <span class="line-number">70</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get DocParser object responsible for parsing given php doc comment</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../Terminalor/DocParser/Terminalor_DocParser_Interface.html">Terminalor_DocParser_Interface</a></span>
+		<span class="method-name">
+			getDocParser
+		</span>
+				()
+			</div>
+	
+		
+				<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt><a href="../../Terminalor/Response/Terminalor_Response_Interface.html#methodgetDocParser">Terminalor_Response_Interface::getDocParser()</a></dt>
+						<dd>Get DocParser object responsible for parsing given php doc comment</dd>
+					</dl>
+			
+	</div>
+<a name="methodgetInputStream" id="getInputStream"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getInputStream</span> (line <span class="line-number">80</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get input stream</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> input stream</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getInputStream
+		</span>
+				()
+			</div>
+	
+		
+				<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt><a href="../../Terminalor/Response/Terminalor_Response_Interface.html#methodgetInputStream">Terminalor_Response_Interface::getInputStream()</a></dt>
+						<dd>Get input stream</dd>
+					</dl>
+			
+	</div>
+<a name="methodgetOutputStream" id="getOutputStream"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getOutputStream</span> (line <span class="line-number">90</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get output stream</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> output stream</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getOutputStream
+		</span>
+				()
+			</div>
+	
+		
+				<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt><a href="../../Terminalor/Response/Terminalor_Response_Interface.html#methodgetOutputStream">Terminalor_Response_Interface::getOutputStream()</a></dt>
+						<dd>Get output stream</dd>
+					</dl>
+			
+	</div>
+<a name="methodgetStyle" id="getStyle"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getStyle</span> (line <span class="line-number">60</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get Style object responsible for managing colors and styles  which are used in decorating user messages</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../Terminalor/Response/Terminalor_Response_Styles_Interface.html">Terminalor_Response_Styles_Interface</a></span>
+		<span class="method-name">
+			getStyle
+		</span>
+				()
+			</div>
+	
+		
+				<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt><a href="../../Terminalor/Response/Terminalor_Response_Interface.html#methodgetStyle">Terminalor_Response_Interface::getStyle()</a></dt>
+						<dd>Get Style object responsible for managing colors and styles  which are used in decorating user messages</dd>
+					</dl>
+			
+	</div>
+<a name="methodmessage" id="message"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">message</span> (line <span class="line-number">170</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Output given message, with style. If $message  is array or object it will be displayed as a table. Where array  keys will become column names. $messageStyleName  can be registred style name or array of style options.</p>
+<p class="description"><p>If $function is provided and $message type is array it will be  applied to each array element.  <div class="src-code"><ol><li><div class="src-line">&nbsp;<span class="src-comm">//&nbsp;pass&nbsp;style&nbsp;options</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$messageStyleName&nbsp;</span>=&nbsp;<span class="src-key">array</span><span class="src-sym">(</span><span class="src-str">'colorName'&nbsp;</span>=&gt;&nbsp;<span class="src-str">'white'</span><span class="src-sym">,</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-str">'backgroundName'&nbsp;</span>=&gt;&nbsp;<span class="src-str">'red'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'underline'&nbsp;</span>=&gt;&nbsp;<span class="src-id">true</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../../Terminalor/Response/Terminalor_Response.html#methodmessage">message</a><span class="src-sym">(</span><span class="src-str">'your&nbsp;message'</span><span class="src-sym">,&nbsp;</span><span class="src-var">$messageStyleName</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+</ol></div>  <div class="src-code"><ol><li><div class="src-line">&nbsp;<span class="src-comm">//&nbsp;pass&nbsp;defined&nbsp;style&nbsp;name</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../../Terminalor/Response/Terminalor_Response.html#methodmessage">message</a><span class="src-sym">(</span><span class="src-str">'your&nbsp;message'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'error'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+</ol></div>  <div class="src-code"><ol><li><div class="src-line">&nbsp;<span class="src-comm">//&nbsp;display&nbsp;array</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$message&nbsp;</span>=&nbsp;<span class="src-key">array</span><span class="src-sym">(</span><span class="src-key">array</span><span class="src-sym">(</span><span class="src-str">'id'&nbsp;</span>=&gt;&nbsp;<span class="src-num">1</span><span class="src-sym">,&nbsp;</span><span class="src-str">'name'&nbsp;</span>=&gt;&nbsp;<span class="src-str">'john'</span><span class="src-sym">)</span><span class="src-sym">,</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-key">array</span><span class="src-sym">(</span><span class="src-str">'id'&nbsp;</span>=&gt;&nbsp;<span class="src-num">2</span><span class="src-sym">,&nbsp;</span><span class="src-str">'name'&nbsp;</span>=&gt;&nbsp;<span class="src-str">'jack'</span><span class="src-sym">))</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../../Terminalor/Response/Terminalor_Response.html#methodmessage">message</a><span class="src-sym">(</span><span class="src-var">$message</span><span class="src-sym">,&nbsp;</span><span class="src-id">null</span><span class="src-sym">,&nbsp;</span><span class="src-key">function</span><span class="src-sym">(</span><span class="src-var">$v</span><span class="src-sym">)</span><span class="src-sym">{</span><span class="src-key">return&nbsp;</span><a href="http://www.php.net/ucfirst">ucfirst</a><span class="src-sym">(</span><span class="src-var">$v</span><span class="src-sym">)</span><span class="src-sym">;</span><span class="src-sym">}</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+</ol></div></p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> true if message was sent</li>
+				<li><span class="field">see:</span> Terminalor_Response_Styles::getStyles() to get defined styles</li>
+				<li><span class="field">see:</span> Terminalor_Response_Styles::getColors() to get defined colors</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			message
+		</span>
+					(<span class="var-type">array|string|object </span>&nbsp;<span class="var-name">$message</span>, [<span class="var-type">array|string</span>&nbsp;<span class="var-name">$messageStyleName</span> = <span class="var-default">null</span>], [<span class="var-type">Closure</span>&nbsp;<span class="var-name">$function</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array|string|object </span>
+				<span class="var-name">$message</span><span class="var-description">: message to display</span>			</li>
+					<li>
+				<span class="var-type">array|string</span>
+				<span class="var-name">$messageStyleName</span><span class="var-description">: defined style name or array of style options</span>			</li>
+					<li>
+				<span class="var-type">Closure</span>
+				<span class="var-name">$function</span><span class="var-description">: callback function applies to each array element</span>			</li>
+				</ul>
+		
+				<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt><a href="../../Terminalor/Response/Terminalor_Response_Interface.html#methodmessage">Terminalor_Response_Interface::message()</a></dt>
+						<dd>Output given message, with style.</dd>
+					</dl>
+			
+	</div>
+<a name="methodpromt" id="promt"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">promt</span> (line <span class="line-number">193</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Ask's user to provide response for given message.</p>
+<p class="description"><p><div class="src-code"><ol><li><div class="src-line">&nbsp;<span class="src-var">$response&nbsp;</span>=&nbsp;<span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../../Terminalor/Response/Terminalor_Response.html#methodpromt">promt</a><span class="src-sym">(</span><span class="src-str">'How&nbsp;old&nbsp;are&nbsp;you&nbsp;?'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+</ol></div></p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> user response text</li>
+				<li><span class="field">see:</span> message() how to set $messageStyleName param</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			promt
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$message</span>, [<span class="var-type">string|array</span>&nbsp;<span class="var-name">$messageStyleName</span> = <span class="var-default">null</span>], [<span class="var-type">string|null</span>&nbsp;<span class="var-name">$promtSign</span> = <span class="var-default">'&gt; '</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$message</span><span class="var-description">: user message</span>			</li>
+					<li>
+				<span class="var-type">string|array</span>
+				<span class="var-name">$messageStyleName</span><span class="var-description">: message style</span>			</li>
+					<li>
+				<span class="var-type">string|null</span>
+				<span class="var-name">$promtSign</span><span class="var-description">: terminal promt sign</span>			</li>
+				</ul>
+		
+				<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt><a href="../../Terminalor/Response/Terminalor_Response_Interface.html#methodpromt">Terminalor_Response_Interface::promt()</a></dt>
+						<dd>Ask's user to provide response for given message.</dd>
+					</dl>
+			
+	</div>
+<a name="methodsendRawMessage" id="sendRawMessage"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">sendRawMessage</span> (line <span class="line-number">125</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Output given message, without any modification</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> true if $message was sent, false otherwise</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			sendRawMessage
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$message</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$message</span><span class="var-description">: string to display</span>			</li>
+				</ul>
+		
+				<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt><a href="../../Terminalor/Response/Terminalor_Response_Interface.html#methodsendRawMessage">Terminalor_Response_Interface::sendRawMessage()</a></dt>
+						<dd>Output given $message, without any modification</dd>
+					</dl>
+			
+	</div>
+<a name="methodsetInputStream" id="setInputStream"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setInputStream</span> (line <span class="line-number">101</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set input stream</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../Terminalor/Response/Terminalor_Response_Interface.html">Terminalor_Response_Interface</a></span>
+		<span class="method-name">
+			setInputStream
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$filename</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$filename</span><span class="var-description">: input stream</span>			</li>
+				</ul>
+		
+				<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt><a href="../../Terminalor/Response/Terminalor_Response_Interface.html#methodsetInputStream">Terminalor_Response_Interface::setInputStream()</a></dt>
+						<dd>Set input stream</dd>
+					</dl>
+			
+	</div>
+<a name="methodsetOutputStream" id="setOutputStream"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setOutputStream</span> (line <span class="line-number">113</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set output stream</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../Terminalor/Response/Terminalor_Response_Interface.html">Terminalor_Response_Interface</a></span>
+		<span class="method-name">
+			setOutputStream
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$filename</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$filename</span><span class="var-description">: output stream</span>			</li>
+				</ul>
+		
+				<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt><a href="../../Terminalor/Response/Terminalor_Response_Interface.html#methodsetOutputStream">Terminalor_Response_Interface::setOutputStream()</a></dt>
+						<dd>Set output stream</dd>
+					</dl>
+			
+	</div>
+						
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Mon, 30 Jan 2012 14:55:07 +1100 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.4</a>
+	</p>
+	</div></body>
+</html>

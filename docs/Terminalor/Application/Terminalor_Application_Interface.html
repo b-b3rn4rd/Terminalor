@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class Terminalor_Application_Interface</title>
+			<link rel="stylesheet" href="../../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Interface Terminalor_Application_Interface</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The application core interface of Terminalor</p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Bernard Baltrusaitis &lt;<a href="mailto:bernard@runawaylover.info">bernard@runawaylover.info</a>&gt;</li>
+				<li><span class="field">link:</span> <a href="http://terminalor.runawaylover.info">http://terminalor.runawaylover.info</a></li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_Application---Interface.php.html">/Application/Interface.php</a> (line <span class="field">17</span>)
+		</p>
+		
+				
+		<pre>ArrayAccess
+   |
+   --Terminalor_Application_Interface</pre>
+	
+			</div>
+</div>
+
+
+
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+												<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																												<div class="method-definition">
+					static 						<span class="method-result">string</span>
+										<a href="#getLibraryPath" title="details" class="method-name">getLibraryPath</a>
+										()
+									</div>
+																																								
+												<div class="method-definition">
+											<span class="method-result"><a href="../../Terminalor/Application/Terminalor_Application_Interface.html">Terminalor_Application_Interface</a></span>
+										<a href="#flush" title="details" class="method-name">flush</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getCommands" title="details" class="method-name">getCommands</a>
+										()
+									</div>
+																								<div class="method-definition">
+											<span class="method-result"><a href="../../Terminalor/Request/Terminalor_Request_Interface.html">Terminalor_Request_Interface</a></span>
+										<a href="#getRequest" title="details" class="method-name">getRequest</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../../Terminalor/Response/Terminalor_Response_Interface.html">Terminalor_Response_Interface</a></span>
+										<a href="#getResponse" title="details" class="method-name">getResponse</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">null</span>
+										<a href="#help" title="details" class="method-name">help</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$commandName</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">null</span>
+										<a href="#__toString" title="details" class="method-name">__toString</a>
+										()
+									</div>
+								</div>
+		</div>
+	</div>		
+
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodgetLibraryPath" id="getLibraryPath"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">static method getLibraryPath</span> (line <span class="line-number">77</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get library absolute path with &quot;/&quot; on the end</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> library path</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+	    static
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getLibraryPath
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+
+<a name="methodflush" id="flush"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">flush</span> (line <span class="line-number">70</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Remove all defined commands</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../Terminalor/Application/Terminalor_Application_Interface.html">Terminalor_Application_Interface</a></span>
+		<span class="method-name">
+			flush
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetCommands" id="getCommands"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getCommands</span> (line <span class="line-number">40</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get array of user defined commands</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> user defined commands</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getCommands
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetRequest" id="getRequest"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getRequest</span> (line <span class="line-number">33</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get request object responsible for commands dispatching and providing  access to user specified arguments</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../Terminalor/Request/Terminalor_Request_Interface.html">Terminalor_Request_Interface</a></span>
+		<span class="method-name">
+			getRequest
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetResponse" id="getResponse"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getResponse</span> (line <span class="line-number">25</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get response object responsible for user interactions such as  displaying messages, promt, confirm. And related functionality.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../Terminalor/Response/Terminalor_Response_Interface.html">Terminalor_Response_Interface</a></span>
+		<span class="method-name">
+			getResponse
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodhelp" id="help"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">help</span> (line <span class="line-number">63</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Shows help for all available commands if $commandName is null  display help for given $commandName otherwise</p>
+	<ul class="tags">
+				<li><span class="field">throws:</span> InvalidArgumentException if given command doesn't exists</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">null</span>
+		<span class="method-name">
+			help
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$commandName</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$commandName</span><span class="var-description">: defined command name</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method__toString" id="__toString"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">__toString</span> (line <span class="line-number">53</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Dispatches application and generates user output,</p>
+<p class="description"><p>works only under cli interface, displays help if  BadFunctionCallException exception is catched, or  --help argument is passed, help can be displayed for all  available commands or for given command</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">example:</span> example not found</li>
+				<li><span class="field">example:</span> example not found</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">null</span>
+		<span class="method-name">
+			__toString
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Mon, 30 Jan 2012 14:55:06 +1100 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.4</a>
+	</p>
+	</div></body>
+</html>

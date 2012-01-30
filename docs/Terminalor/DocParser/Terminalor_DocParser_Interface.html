@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class Terminalor_DocParser_Interface</title>
+			<link rel="stylesheet" href="../../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Interface Terminalor_DocParser_Interface</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Terminalor DocParser class responsible for parsing given php doc comments into  assoc array where doc tags becomes array keys.</p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Bernard Baltrusaitis &lt;<a href="mailto:bernard@runawaylover.info">bernard@runawaylover.info</a>&gt;</li>
+				<li><span class="field">link:</span> <a href="http://terminalor.runawaylover.info">http://terminalor.runawaylover.info</a></li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_DocParser---Interface.php.html">/DocParser/Interface.php</a> (line <span class="field">18</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+												<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																												
+												<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#buildHelp" title="details" class="method-name">buildHelp</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../../Terminalor/DocParser/Terminalor_DocParser_Interface.html">Terminalor_DocParser_Interface</a></span>
+										<a href="#flush" title="details" class="method-name">flush</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getCommandName" title="details" class="method-name">getCommandName</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string|null</span>
+										<a href="#getDocTagAlias" title="details" class="method-name">getDocTagAlias</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$tagName</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$returnOriginal</span> = <span class="var-default">true</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getDocTagsAliases" title="details" class="method-name">getDocTagsAliases</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getParsedDocComment" title="details" class="method-name">getParsedDocComment</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string|array|null</span>
+										<a href="#getParsedDocTag" title="details" class="method-name">getParsedDocTag</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$tagName</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getRawDocComment" title="details" class="method-name">getRawDocComment</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../../Terminalor/DocParser/Terminalor_DocParser_Template_Interface.html">Terminalor_DocParser_Template_Interface</a></span>
+										<a href="#getTemplate" title="details" class="method-name">getTemplate</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../../Terminalor/DocParser/Terminalor_DocParser_Interface.html">Terminalor_DocParser_Interface</a></span>
+										<a href="#parseRawDocComment" title="details" class="method-name">parseRawDocComment</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../../Terminalor/DocParser/Terminalor_DocParser_Interface.html">Terminalor_DocParser_Interface</a></span>
+										<a href="#setCommandName" title="details" class="method-name">setCommandName</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$commandName</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../../Terminalor/DocParser/Terminalor_DocParser_Interface.html">Terminalor_DocParser_Interface</a></span>
+										<a href="#setDocTagAlias" title="details" class="method-name">setDocTagAlias</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$tagName</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$tagAlias</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../../Terminalor/DocParser/Terminalor_DocParser_Interface.html">Terminalor_DocParser_Interface</a></span>
+										<a href="#setRawDocComment" title="details" class="method-name">setRawDocComment</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$rawDocComment</span>)
+									</div>
+								</div>
+		</div>
+	</div>		
+
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+
+<a name="methodbuildHelp" id="buildHelp"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">buildHelp</span> (line <span class="line-number">120</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Build commands help using specified doc comments</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> commands help with style placeholders</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			buildHelp
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodflush" id="flush"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">flush</span> (line <span class="line-number">127</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set object properties to the initial state</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../Terminalor/DocParser/Terminalor_DocParser_Interface.html">Terminalor_DocParser_Interface</a></span>
+		<span class="method-name">
+			flush
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetCommandName" id="getCommandName"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getCommandName</span> (line <span class="line-number">47</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get given command name</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> command name</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getCommandName
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetDocTagAlias" id="getDocTagAlias"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getDocTagAlias</span> (line <span class="line-number">76</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get tag alias (if exists) if $returnOriginal is true and tag alias is not found  method will return value $tagName</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> tag alias</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string|null</span>
+		<span class="method-name">
+			getDocTagAlias
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$tagName</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$returnOriginal</span> = <span class="var-default">true</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$tagName</span><span class="var-description">: tag name</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$returnOriginal</span><span class="var-description">: return $tagName on failure</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetDocTagsAliases" id="getDocTagsAliases"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getDocTagsAliases</span> (line <span class="line-number">66</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get available tags aliases</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> array of tags aliases</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getDocTagsAliases
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetParsedDocComment" id="getParsedDocComment"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getParsedDocComment</span> (line <span class="line-number">33</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get parsed doc comment</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> parsed doc comment as assoc array</li>
+				<li><span class="field">see:</span> parseRawDocComment() how to parse doc comment</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getParsedDocComment
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetParsedDocTag" id="getParsedDocTag"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getParsedDocTag</span> (line <span class="line-number">59</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get parsed tag value by tag name, returns null if tag with given name  is not found in getParsedDocComment().</p>
+<p class="description"><p><strong>Tags are stores agains aliases</strong></p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> tag value</li>
+				<li><span class="field">see:</span> getDocTagsAliases() to get all available aliases</li>
+				<li><span class="field">see:</span> getParsedDocComment() to get parsed tags</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string|array|null</span>
+		<span class="method-name">
+			getParsedDocTag
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$tagName</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$tagName</span><span class="var-description">: tag name</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetRawDocComment" id="getRawDocComment"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getRawDocComment</span> (line <span class="line-number">40</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get un-parsed doc comment</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> un-parsed (raw) doc comment</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getRawDocComment
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetTemplate" id="getTemplate"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getTemplate</span> (line <span class="line-number">25</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get template object responsible for rendering parsed php doc tags</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../Terminalor/DocParser/Terminalor_DocParser_Template_Interface.html">Terminalor_DocParser_Template_Interface</a></span>
+		<span class="method-name">
+			getTemplate
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodparseRawDocComment" id="parseRawDocComment"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">parseRawDocComment</span> (line <span class="line-number">113</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Parse un-parsed doc comment into assoc array and pass this array to the template</p>
+	<ul class="tags">
+				<li><span class="field">see:</span> setRawDocComment() how to specify doc comment for this method</li>
+				<li><span class="field">see:</span> getParsedDocComment how to get result of this method</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../Terminalor/DocParser/Terminalor_DocParser_Interface.html">Terminalor_DocParser_Interface</a></span>
+		<span class="method-name">
+			parseRawDocComment
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodsetCommandName" id="setCommandName"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setCommandName</span> (line <span class="line-number">92</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Specify command name</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../Terminalor/DocParser/Terminalor_DocParser_Interface.html">Terminalor_DocParser_Interface</a></span>
+		<span class="method-name">
+			setCommandName
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$commandName</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$commandName</span><span class="var-description">: command name</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetDocTagAlias" id="setDocTagAlias"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setDocTagAlias</span> (line <span class="line-number">104</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Specify alias for given tag</p>
+<p class="description"><p><div class="src-code"><ol><li><div class="src-line">&nbsp;<span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../../Terminalor/DocParser/Terminalor_DocParser_Interface.html#methodsetDocTagAlias">setDocTagAlias</a><span class="src-sym">(</span><span class="src-str">'param'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'arguments'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+</ol></div></p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../Terminalor/DocParser/Terminalor_DocParser_Interface.html">Terminalor_DocParser_Interface</a></span>
+		<span class="method-name">
+			setDocTagAlias
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$tagName</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$tagAlias</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$tagName</span><span class="var-description">: tag original name</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$tagAlias</span><span class="var-description">: tag alias</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetRawDocComment" id="setRawDocComment"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setRawDocComment</span> (line <span class="line-number">84</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set un-parsed (raw) doc comment</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../Terminalor/DocParser/Terminalor_DocParser_Interface.html">Terminalor_DocParser_Interface</a></span>
+		<span class="method-name">
+			setRawDocComment
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$rawDocComment</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$rawDocComment</span><span class="var-description">: un-parsed doc comment</span>			</li>
+				</ul>
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Mon, 30 Jan 2012 14:55:06 +1100 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.4</a>
+	</p>
+	</div></body>
+</html>

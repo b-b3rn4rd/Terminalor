@@ -1,0 +1,13 @@
+<phpunit bootstrap="bootstrap.php" colors="true">
+    <testsuites>
+        <testsuite>
+            <directory>./</directory>
+        </testsuite>
+    </testsuites>
+    <filter>
+      <whitelist>
+        <directory suffix=".php">./../library/Terminalor</directory>
+      </whitelist>
+    </filter>
+</phpunit>
+

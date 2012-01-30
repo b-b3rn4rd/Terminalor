@@ -1,0 +1,845 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class Terminalor_Builder_Interface</title>
+			<link rel="stylesheet" href="../../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Interface Terminalor_Builder_Interface</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Terminator Builder class responsible for genereting single portable php cli  file by merging declared classes and interfaces into single file</p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Bernard Baltrusaitis &lt;<a href="mailto:bernard@runawaylover.info">bernard@runawaylover.info</a>&gt;</li>
+				<li><span class="field">link:</span> <a href="http://terminalor.runawaylover.info">http://terminalor.runawaylover.info</a></li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_Builder---Interface.php.html">/Builder/Interface.php</a> (line <span class="field">18</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+												<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																																																																																												
+												<div class="method-definition">
+											<span class="method-result"><a href="../../Terminalor/Builder/Terminalor_Builder_Interface.html">Terminalor_Builder_Interface</a></span>
+										<a href="#addExcludeClassPattern" title="details" class="method-name">addExcludeClassPattern</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$pattern</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../../Terminalor/Builder/Terminalor_Builder_Interface.html">Terminalor_Builder_Interface</a></span>
+										<a href="#addIncludeClassPattern" title="details" class="method-name">addIncludeClassPattern</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$pattern</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../../Terminalor/Builder/Terminalor_Builder_Interface.html">Terminalor_Builder_Interface</a></span>
+										<a href="#appendBuildSource" title="details" class="method-name">appendBuildSource</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$content</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#classIsAllowed" title="details" class="method-name">classIsAllowed</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$className</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getBootstrapString" title="details" class="method-name">getBootstrapString</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getBuildHeader" title="details" class="method-name">getBuildHeader</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getBuildSource" title="details" class="method-name">getBuildSource</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getExcludeClassesPatterns" title="details" class="method-name">getExcludeClassesPatterns</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getFileSource" title="details" class="method-name">getFileSource</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$filename</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$minimizeSource</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getIncludeClassesPatterns" title="details" class="method-name">getIncludeClassesPatterns</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getOpenPhpTag" title="details" class="method-name">getOpenPhpTag</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getSourceFilename" title="details" class="method-name">getSourceFilename</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getSourceIncludes" title="details" class="method-name">getSourceIncludes</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">&$source</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$removeIncludes</span> = <span class="var-default">false</span>], <span class="var-type">string</span>&nbsp;<span class="var-name">$source</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getTargetFilename" title="details" class="method-name">getTargetFilename</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">null</span>
+										<a href="#includeDirectoryForBuild" title="details" class="method-name">includeDirectoryForBuild</a>
+											(<span class="var-type">RecursiveIteratorIterator</span>&nbsp;<span class="var-name">$iterator</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$minimizeSource</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">null</span>
+										<a href="#includeFileForBuild" title="details" class="method-name">includeFileForBuild</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$filename</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$minimizeSource</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#isMinimizeSource" title="details" class="method-name">isMinimizeSource</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../../Terminalor/Builder/Terminalor_Builder_Interface.html">Terminalor_Builder_Interface</a></span>
+										<a href="#prependBuildSource" title="details" class="method-name">prependBuildSource</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$content</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">null</span>
+										<a href="#saveBuildSource" title="details" class="method-name">saveBuildSource</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../../Terminalor/Builder/Terminalor_Builder_Interface.html">Terminalor_Builder_Interface</a></span>
+										<a href="#setBuildHeader" title="details" class="method-name">setBuildHeader</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$header</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../../Terminalor/Builder/Terminalor_Builder_Interface.html">Terminalor_Builder_Interface</a></span>
+										<a href="#setBuildSource" title="details" class="method-name">setBuildSource</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$source</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../../Terminalor/Builder/Terminalor_Builder_Interface.html">Terminalor_Builder_Interface</a></span>
+										<a href="#setTargetFilename" title="details" class="method-name">setTargetFilename</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$filename</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#stripPhpTags" title="details" class="method-name">stripPhpTags</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$source</span>)
+									</div>
+								</div>
+		</div>
+	</div>		
+
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+
+<a name="methodaddExcludeClassPattern" id="addExcludeClassPattern"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">addExcludeClassPattern</span> (line <span class="line-number">167</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Add exclude class pattern</p>
+<p class="description"><p><div class="src-code"><ol><li><div class="src-line">&nbsp;<span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../../Terminalor/Builder/Terminalor_Builder_Interface.html#methodaddExcludeClassPattern">addExcludeClassPattern</a><span class="src-sym">(</span><span class="src-str">'/^Terminalor_Builder_/'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+</ol></div></p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../Terminalor/Builder/Terminalor_Builder_Interface.html">Terminalor_Builder_Interface</a></span>
+		<span class="method-name">
+			addExcludeClassPattern
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$pattern</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$pattern</span><span class="var-description">: regular expression</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodaddIncludeClassPattern" id="addIncludeClassPattern"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">addIncludeClassPattern</span> (line <span class="line-number">156</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Add include class pattern</p>
+<p class="description"><p><div class="src-code"><ol><li><div class="src-line">&nbsp;<span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../../Terminalor/Builder/Terminalor_Builder_Interface.html#methodaddIncludeClassPattern">addIncludeClassPattern</a><span class="src-sym">(</span><span class="src-str">'/^Zend_/'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+</ol></div></p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../Terminalor/Builder/Terminalor_Builder_Interface.html">Terminalor_Builder_Interface</a></span>
+		<span class="method-name">
+			addIncludeClassPattern
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$pattern</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$pattern</span><span class="var-description">: regular expression</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodappendBuildSource" id="appendBuildSource"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">appendBuildSource</span> (line <span class="line-number">137</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Append build source with $content</p>
+	<ul class="tags">
+				<li><span class="field">see:</span> setBuildSource() how to replace build source</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../Terminalor/Builder/Terminalor_Builder_Interface.html">Terminalor_Builder_Interface</a></span>
+		<span class="method-name">
+			appendBuildSource
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$content</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$content</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodclassIsAllowed" id="classIsAllowed"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">classIsAllowed</span> (line <span class="line-number">175</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Check if given class name is allowed to be included in build</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> true if file is allowed</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			classIsAllowed
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$className</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$className</span><span class="var-description">: class name</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetBootstrapString" id="getBootstrapString"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getBootstrapString</span> (line <span class="line-number">32</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get bootstrap string</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> bootstrap</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getBootstrapString
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetBuildHeader" id="getBuildHeader"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getBuildHeader</span> (line <span class="line-number">60</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get file header</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> file header</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getBuildHeader
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetBuildSource" id="getBuildSource"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getBuildSource</span> (line <span class="line-number">67</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get build source</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> build source</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getBuildSource
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetExcludeClassesPatterns" id="getExcludeClassesPatterns"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getExcludeClassesPatterns</span> (line <span class="line-number">74</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get exclude classes patterns</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> array of patterns</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getExcludeClassesPatterns
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetFileSource" id="getFileSource"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getFileSource</span> (line <span class="line-number">103</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get given file source if $minimizeSource is true then  source will be minimized</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> file source</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getFileSource
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$filename</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$minimizeSource</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$filename</span><span class="var-description">: file location</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$minimizeSource</span><span class="var-description">: minimize or not file source</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetIncludeClassesPatterns" id="getIncludeClassesPatterns"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getIncludeClassesPatterns</span> (line <span class="line-number">81</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get included classes patterns</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> array of patterns</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getIncludeClassesPatterns
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetOpenPhpTag" id="getOpenPhpTag"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getOpenPhpTag</span> (line <span class="line-number">25</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get open php tag</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> open php tag</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getOpenPhpTag
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetSourceFilename" id="getSourceFilename"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getSourceFilename</span> (line <span class="line-number">39</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get build source filename</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> source filename</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getSourceFilename
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetSourceIncludes" id="getSourceIncludes"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getSourceIncludes</span> (line <span class="line-number">92</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Find all includes in source, if $removeIncludes is true  then it also removes includes from given source</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> array of includes found in source</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getSourceIncludes
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">&$source</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$removeIncludes</span> = <span class="var-default">false</span>], <span class="var-type">string</span>&nbsp;<span class="var-name">$source</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$source</span><span class="var-description">: file source</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$removeIncludes</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">&$source</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetTargetFilename" id="getTargetFilename"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getTargetFilename</span> (line <span class="line-number">46</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get build target filename</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> target filename</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getTargetFilename
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodincludeDirectoryForBuild" id="includeDirectoryForBuild"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">includeDirectoryForBuild</span> (line <span class="line-number">198</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Include files in directory for build, this method is wrapper for  includeFileForBuild()</p>
+	<ul class="tags">
+				<li><span class="field">see:</span> includeFileForBuild() how file is included</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">null</span>
+		<span class="method-name">
+			includeDirectoryForBuild
+		</span>
+					(<span class="var-type">RecursiveIteratorIterator</span>&nbsp;<span class="var-name">$iterator</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$minimizeSource</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">RecursiveIteratorIterator</span>
+				<span class="var-name">$iterator</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$minimizeSource</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodincludeFileForBuild" id="includeFileForBuild"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">includeFileForBuild</span> (line <span class="line-number">187</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Include file for build, file source open/close tags will be stripped  all includes commented out if $minimizeSource is true then file source  will be minimized</p>
+	<ul class="tags">
+				<li><span class="field">see:</span> getBuildSource() to check if file source was included</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">null</span>
+		<span class="method-name">
+			includeFileForBuild
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$filename</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$minimizeSource</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$filename</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$minimizeSource</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodisMinimizeSource" id="isMinimizeSource"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">isMinimizeSource</span> (line <span class="line-number">53</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Indicates if source needs to be minimized in build</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> true if minimize source</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			isMinimizeSource
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodprependBuildSource" id="prependBuildSource"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">prependBuildSource</span> (line <span class="line-number">128</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Prepend build source with $content</p>
+	<ul class="tags">
+				<li><span class="field">see:</span> setBuildSource() how to replace build source</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../Terminalor/Builder/Terminalor_Builder_Interface.html">Terminalor_Builder_Interface</a></span>
+		<span class="method-name">
+			prependBuildSource
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$content</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$content</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsaveBuildSource" id="saveBuildSource"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">saveBuildSource</span> (line <span class="line-number">206</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Save build content</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">null</span>
+		<span class="method-name">
+			saveBuildSource
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodsetBuildHeader" id="setBuildHeader"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setBuildHeader</span> (line <span class="line-number">111</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set file header</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../Terminalor/Builder/Terminalor_Builder_Interface.html">Terminalor_Builder_Interface</a></span>
+		<span class="method-name">
+			setBuildHeader
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$header</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$header</span><span class="var-description">: file header</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetBuildSource" id="setBuildSource"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setBuildSource</span> (line <span class="line-number">145</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set build source</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../Terminalor/Builder/Terminalor_Builder_Interface.html">Terminalor_Builder_Interface</a></span>
+		<span class="method-name">
+			setBuildSource
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$source</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$source</span><span class="var-description">: build source</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetTargetFilename" id="setTargetFilename"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setTargetFilename</span> (line <span class="line-number">119</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Specify target filename</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../../Terminalor/Builder/Terminalor_Builder_Interface.html">Terminalor_Builder_Interface</a></span>
+		<span class="method-name">
+			setTargetFilename
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$filename</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$filename</span><span class="var-description">: target filename</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodstripPhpTags" id="stripPhpTags"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">stripPhpTags</span> (line <span class="line-number">214</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Strip open/close php tags from the source</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> source without php tags</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			stripPhpTags
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$source</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$source</span><span class="var-description">: file source</span>			</li>
+				</ul>
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Mon, 30 Jan 2012 14:55:06 +1100 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.4</a>
+	</p>
+	</div></body>
+</html>
