@@ -10,7 +10,7 @@
  */
 
 require_once dirname(__FILE__). '/../library/terminalor_required.php';
-require_once '/var/www/lendline/library/Swift/swift_required.php';
+require_once 'Swift/swift_required.php';
 
 /* @var $terminalor Terminalor_Application_Interface */
 $terminalor = Terminalor_Container::getInstance()

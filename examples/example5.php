@@ -19,14 +19,14 @@ $build = new Terminalor_Builder($filename);
 $build->addIncludeClassPattern('/^Swift/');
 
 // include induvidual file
-$build->includeFileForBuild('/var/www/lendline/library/Swift/swift_required.php');
-$build->includeFileForBuild('/var/www/lendline/library/Swift/mime_types.php');
+$build->includeFileForBuild('Swift/swift_required.php');
+$build->includeFileForBuild('Swift/mime_types.php');
 
 // include all files from given directory
-$path = '/var/www/lendline/library/Swift/dependency_maps';
+$path = 'Swift/dependency_maps';
 $iterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($path));
 $build->includeDirectoryForBuild($iterator);
-$build->includeFileForBuild('/var/www/lendline/library/Swift/preferences.php');
+$build->includeFileForBuild('Swift/preferences.php');
 
 // build with custom atrributes
 $build->build(array(
