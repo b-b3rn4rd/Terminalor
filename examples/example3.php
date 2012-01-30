@@ -29,11 +29,11 @@ $terminalor->getRequest()
  * @param string $body email body
  */
 $terminalor['sendmail'] = function(Terminalor_Application_Interface $terminalor, $title, $body){
-    $transport = Swift_SmtpTransport::newInstance('mail.ntaa.com.au');
+    $transport = Swift_SmtpTransport::newInstance('smtp.example.com');
     $mailer    = Swift_Mailer::newInstance($transport);
     $message   = Swift_Message::newInstance($title)
-        ->setFrom(array('bernard.baltrusaitis@interprac.com.au' => 'John Doh'))
-        ->setTo(array('bernard@runawaylover.info'))
+        ->setFrom(array('john.doh@example.com' => 'John Doh'))
+        ->setTo(array('john.doh@example.com'))
         ->setBody($body);
 
     $result = $mailer->send($message);
