@@ -23,6 +23,7 @@ $terminalor['index'] =
  * Sends email with given attributes using gmail
  * 
  * @author Bernard Baltrusaitis <bernard@runawaylover.info>
+ * @version 1.0
  * @param string $title email subject
  * @param string $to email to
  * @param string $body email body
@@ -32,8 +33,8 @@ function(Terminalor_Application_Interface $terminalor, $title, $body, $to = 'joh
         'ssl'      => 'ssl',
         'port'     => '465',
         'auth'     => 'login',
-        'username' => 'bernard@runawaylover.info',
-        'password' => 'lezard1853' ));
+        'username' => '******@gmail.com',
+        'password' => '******' ));
         
     $mail = new Zend_Mail();
     $mail->setFrom('john.doh@runawaylover.info', 'John Doh');
