@@ -1,17 +1,15 @@
 <?php
-/*
+/**
  * This file is part of Terminalor.
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
- */
-
-/**
+ * 
  * Terminalor Registry class responsible for managing global data
  *
- * @author      Bernard Baltrusaitis <bernard@runawaylover.info>
  * @package     Terminalor
  * @subpackage  Registry
+ * @author      Bernard Baltrusaitis <bernard@runawaylover.info>
  * @link        http://terminalor.runawaylover.info
  */
 class Terminalor_Registry extends ArrayObject

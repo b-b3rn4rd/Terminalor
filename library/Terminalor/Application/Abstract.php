@@ -1,19 +1,17 @@
 <?php
-/*
+/**
  * This file is part of Terminalor.
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
- */
-
-/**
+ *
  * Terminalor core base application class provide global application methods
  * and getters for the Request, Response objects.
  *
- * @author      Bernard Baltrusaitis <bernard@runawaylover.info>
- * @package     Terminalor
- * @subpackage  Application
- * @link        http://terminalor.runawaylover.info
+ * @package    Terminalor
+ * @subpackage Application
+ * @author     Bernard Baltrusaitis <bernard@runawaylover.info>
+ * @link       http://terminalor.runawaylover.info
  */
 abstract class Terminalor_Application_Abstract implements Terminalor_Application_Interface
 {
@@ -38,6 +36,12 @@ abstract class Terminalor_Application_Abstract implements Terminalor_Application
      */
     protected $_commands = array();
     
+    /**
+     * Terminalor_Application constuctor
+     * 
+     * @param Terminalor_Response_Interface $response reponse object
+     * @param Terminalor_Request_Interface  $request  request object
+     */
     public function  __construct(Terminalor_Response_Interface $response,
         Terminalor_Request_Interface $request)
     {
@@ -143,7 +147,7 @@ abstract class Terminalor_Application_Abstract implements Terminalor_Application
             str_replace('_', '/', $class));
 
         if (is_readable($filename)) {
-            include($filename);
+            include $filename;
         }
     }
     

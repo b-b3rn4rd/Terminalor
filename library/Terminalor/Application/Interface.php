@@ -1,18 +1,16 @@
 <?php
-/*
+/**
  * This file is part of Terminalor.
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
- */
-
-/**
+ *
  * The application core interface of Terminalor
  *
- * @author      Bernard Baltrusaitis <bernard@runawaylover.info>
- * @package     Terminalor
- * @subpackage  Application
- * @link        http://terminalor.runawaylover.info
+ * @package    Terminalor
+ * @subpackage Application
+ * @author     Bernard Baltrusaitis <bernard@runawaylover.info>
+ * @link       http://terminalor.runawaylover.info
  */
 interface Terminalor_Application_Interface extends ArrayAccess, Countable, Iterator
 {

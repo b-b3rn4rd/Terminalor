@@ -1,19 +1,17 @@
 <?php
-/*
+/**
  * This file is part of Terminalor.
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
- */
-
-/**
+ *
  * Terminalor DocParser class responsible for parsing given php doc comments into
  * assoc array where doc tags becomes array keys.
  *
- * @author      Bernard Baltrusaitis <bernard@runawaylover.info>
- * @package     Terminalor
- * @subpackage  DocParser
- * @link        http://terminalor.runawaylover.info
+ * @package    Terminalor
+ * @subpackage DocParser
+ * @author     Bernard Baltrusaitis <bernard@runawaylover.info>
+ * @link       http://terminalor.runawaylover.info
  */
 interface Terminalor_DocParser_Interface
 {

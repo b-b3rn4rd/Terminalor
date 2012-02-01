@@ -28,7 +28,7 @@ $terminalor['index'] =
  * @param string $to email to
  * @param string $body email body
  */
-function(Terminalor_Application_Interface $terminalor, $title, $body, $to = 'john.doh@runawaylover.info') {
+function(Terminalor_Application_Interface $terminalor, $title, $body, $to = 'john.doh@example.com') {
     $transport = new Zend_Mail_Transport_Smtp('smtp.gmail.com', array(
         'ssl'      => 'ssl',
         'port'     => '465',
@@ -37,7 +37,7 @@ function(Terminalor_Application_Interface $terminalor, $title, $body, $to = 'joh
         'password' => '******' ));
         
     $mail = new Zend_Mail();
-    $mail->setFrom('john.doh@runawaylover.info', 'John Doh');
+    $mail->setFrom('john.doh@example.com', 'John Doh');
     $mail->addTo($to);
     $mail->setSubject($title);
     $mail->setBodyText($body);

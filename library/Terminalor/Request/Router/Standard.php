@@ -1,19 +1,17 @@
 <?php
-/*
+/**
  * This file is part of Terminalor.
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
- */
-
-/**
+ *
  * Terminator Response Router Standard default router responsible for parsing
  * $_SERVER['argv'] var into assoc array.
  *
- * @author      Bernard Baltrusaitis <bernard@runawaylover.info>
- * @package     Terminalor
- * @subpackage  Response
- * @link        http://terminalor.runawaylover.info
+ * @package    Terminalor
+ * @subpackage Response
+ * @author     Bernard Baltrusaitis <bernard@runawaylover.info>
+ * @link       http://terminalor.runawaylover.info
  */
 class Terminalor_Request_Router_Standard implements Terminalor_Request_Router_Interface
 {

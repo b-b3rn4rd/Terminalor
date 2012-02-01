@@ -1,19 +1,17 @@
 <?php
-/*
+/**
  * This file is part of Terminalor.
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
- */
-
-/**
+ *
  * Terminator Response class responsible for user interactions such as
  * displaying messages, promt, confirm. And related functionality.
  *
- * @author      Bernard Baltrusaitis <bernard@runawaylover.info>
- * @package     Terminalor
- * @subpackage  Response
- * @link        http://terminalor.runawaylover.info
+ * @package    Terminalor
+ * @subpackage Response
+ * @author     Bernard Baltrusaitis <bernard@runawaylover.info>
+ * @link       http://terminalor.runawaylover.info
  */
 class Terminalor_Response implements Terminalor_Response_Interface
 {
@@ -354,7 +352,7 @@ class Terminalor_Response implements Terminalor_Response_Interface
         // prepend array keys as new element
         array_unshift($array, array_keys(reset($array)));
 
-        // use numeric keys instead by extracting values
+        /** use numeric keys instead by extracting values */
         $array = array_map(function($row) {
             return array_values($row);
         }, $array);
@@ -363,7 +361,7 @@ class Terminalor_Response implements Terminalor_Response_Interface
         $cellSizes = array_fill_keys(range(0,
             count($array[0])-1), 0);
 
-        // find longest el. in each column and apply closure except header
+        /** find longest el. in each column and apply closure except header */
         array_walk_recursive($array, function(&$cell, $cellNum) use (&$cellSizes, $function) {
             $maxSize = &$cellSizes[$cellNum];
 
@@ -376,7 +374,7 @@ class Terminalor_Response implements Terminalor_Response_Interface
             }
         });
         
-        // function draws separation line
+        /** function draws separation line */
         $line = function ($row = null) {
             static $return;
 
@@ -433,6 +431,7 @@ class Terminalor_Response implements Terminalor_Response_Interface
             }
             foreach ($row as &$cell) {
                 if (is_array($cell)) {
+                    /** remove non arrays */
                     $cell = array_filter($cell, function($value){
                         return !is_array($value);
                     });
@@ -462,7 +461,7 @@ class Terminalor_Response implements Terminalor_Response_Interface
      * Validate if type of given variable is string
      * 
      * @throws InvalidArgumentException if type is not string
-     * @param mixed $message
+     * @param mixed $message given message
      * @return boolean true if message type is string
      */
     private function _messageIsString($message)

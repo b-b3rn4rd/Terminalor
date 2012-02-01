@@ -1,19 +1,17 @@
 <?php
-/*
+/**
  * This file is part of Terminalor.
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
- */
-
-/**
+ *
  * Terminalor core application class responsible for managing user defined
  * commands.
  *
- * @author      Bernard Baltrusaitis <bernard@runawaylover.info>
- * @package     Terminalor
- * @subpackage  Application
- * @link        http://terminalor.runawaylover.info
+ * @package    Terminalor
+ * @subpackage Application
+ * @author     Bernard Baltrusaitis <bernard@runawaylover.info>
+ * @link       http://terminalor.runawaylover.info
  */
 class Terminalor_Application extends Terminalor_Application_Abstract
 {
@@ -57,8 +55,8 @@ class Terminalor_Application extends Terminalor_Application_Abstract
      * };
      * </code>
      *
-     * @param string $offset command name
-     * @param Closure $value command body
+     * @param string  $offset command name
+     * @param Closure $value  command body
      * @return null
      */
     public function offsetSet($offset, $value)
@@ -174,6 +172,11 @@ class Terminalor_Application extends Terminalor_Application_Abstract
         return $this;
     }
     
+    /**
+     * Dispatches application
+     * 
+     * @return null
+     */
     public function  __toString()
     {
         if (!defined('_TERMINALOR_BUILDER_')) {

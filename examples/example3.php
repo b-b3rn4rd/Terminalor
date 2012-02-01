@@ -36,7 +36,8 @@ $terminalor['sendmail'] = function(Terminalor_Application_Interface $terminalor,
         ->setTo(array('john.doh@example.com'))
         ->setBody($body);
 
-    $result = $mailer->send($message);
+    $mailer->send($message);
+    $terminalor->getResponse()->message('Email has been sent', 'success');
 };
 
 $terminalor->__toString();

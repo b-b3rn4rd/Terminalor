@@ -1,12 +1,10 @@
 <?php
-/*
+/**
  * This file is part of Terminalor.
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
- */
-
-/**
+ *
  * File responsible for installing default dependencies, include THIS file BEFORE
  * your commands
  * <code>
