@@ -420,6 +420,11 @@ class Terminalor_Response implements Terminalor_Response_Interface
     private function _transformToSmartArray(array $array)
     {
         $array = json_decode(@json_encode($array), true);
+
+        if (count($array) == count($array, true)) {
+            $array = array($array);
+        }
+        
         $maxRowNum  = 0;
         $maxRowSize = 0;
         foreach ($array as $rowNum => &$row) {
