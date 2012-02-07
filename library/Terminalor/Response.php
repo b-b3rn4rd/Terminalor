@@ -226,7 +226,7 @@ class Terminalor_Response implements Terminalor_Response_Interface
             $response = $this->promt($message, $messageStyleName, $promtSign);
         } while (!preg_match('/(y|n)/i', $response, $matches));
 
-        $answer = $matches[1];
+        $answer = strtolower($matches[1]);
         return ($answer == 'y' ? true : false);
     }
 

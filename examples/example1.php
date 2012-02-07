@@ -46,4 +46,10 @@ function(Terminalor_Application_Interface $terminalor, $title, $body, $to = 'joh
     $terminalor->getResponse()->message(sprintf('Email to `%s` has been sent', $to),
         'success');
 };
+
+$terminalor['test'] = function (Terminalor_Application_Interface $terminalor) {
+    $a = $terminalor->getResponse()->confirm('ok');
+    var_dump($a);
+};
+
 $terminalor->__toString();

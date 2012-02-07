@@ -292,6 +292,24 @@ class Terminalor_ResponseTest extends PHPUnit_Framework_TestCase
         $this->assertTrue($actual);
     }
 
+    public function testConfirmMethodIsCaseInsensitive()
+    {
+        $defStyle  = $this->_mockStyleEntity('normal', null, null, null, null);
+
+        /* @var $styleMock PHPUnit_Framework_MockObject_MockObject */
+        $styleMock = $this->_response->getStyle();
+        $styleMock->expects($this->atLeastOnce())
+            ->method('getStyleValues')
+            ->with($this->isNull())
+            ->will($this->returnValue($defStyle));
+
+        $filename = $this->_response->getInputStream();
+        file_put_contents($filename, 'Y');
+
+        $actual = $this->_response->confirm('string message', null, null);
+        $this->assertTrue($actual);
+    }
+
     public function testConfirmMethodReturnFalseForNInInputStream()
     {
         $defStyle  = $this->_mockStyleEntity('normal', null, null, null, null);
