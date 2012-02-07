@@ -32,7 +32,7 @@
 				<li><span class="field">abstract:</span> </li>
 			</ul>
 		<p class="notes">
-			Located in <a class="field" href="_Builder---Abstract.php.html">/Builder/Abstract.php</a> (line <span class="field">21</span>)
+			Located in <a class="field" href="_Builder---Abstract.php.html">/Builder/Abstract.php</a> (line <span class="field">19</span>)
 		</p>
 		
 				
@@ -122,7 +122,7 @@
 												<div class="method-definition">
 											<span class="method-result">Terminalor_Builder_Abstract</span>
 										<a href="#__construct" title="details" class="method-name">__construct</a>
-											(<span class="var-type"></span>&nbsp;<span class="var-name">$sourceFilename</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$targetFilename</span> = <span class="var-default">null</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$_minimizeSource</span> = <span class="var-default">true</span>])
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$sourceFilename</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$targetFilename</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$minimizeSource</span> = <span class="var-default">true</span>])
 									</div>
 																<div class="method-definition">
 											<span class="method-result"><a href="../../Terminalor/Builder/Terminalor_Builder_Interface.html">Terminalor_Builder_Interface</a></span>
@@ -259,7 +259,7 @@
 		<span class="var-title">
 			<span class="var-type">string</span>
 			<span class="var-name">$_buildHeader</span>
-			 = <span class="var-default"> &quot;#!/usr/bin/php\n&quot;</span>			(line <span class="line-number">53</span>)
+			 = <span class="var-default"> &quot;#!/usr/bin/php\n&quot;</span>			(line <span class="line-number">51</span>)
 		</span>
 	</div>
 
@@ -281,7 +281,7 @@
 		<span class="var-title">
 			<span class="var-type">string</span>
 			<span class="var-name">$_buildSource</span>
-			 = <span class="var-default"> ''</span>			(line <span class="line-number">59</span>)
+			 = <span class="var-default"> ''</span>			(line <span class="line-number">57</span>)
 		</span>
 	</div>
 
@@ -303,7 +303,7 @@
 		<span class="var-title">
 			<span class="var-type">boolean</span>
 			<span class="var-name">$_minimizeSource</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number">47</span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number">45</span>)
 		</span>
 	</div>
 
@@ -325,7 +325,7 @@
 		<span class="var-title">
 			<span class="var-type">string</span>
 			<span class="var-name">$_sourceFilename</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number">66</span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number">64</span>)
 		</span>
 	</div>
 
@@ -347,7 +347,7 @@
 		<span class="var-title">
 			<span class="var-type">string</span>
 			<span class="var-name">$_targetFilename</span>
-			 = <span class="var-default"> null</span>			(line <span class="line-number">73</span>)
+			 = <span class="var-default"> null</span>			(line <span class="line-number">71</span>)
 		</span>
 	</div>
 
@@ -383,10 +383,11 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">Constructor __construct</span> (line <span class="line-number">84</span>)
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number">89</span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Build given file into single portable file</p>
 	<ul class="tags">
 				<li><span class="field">access:</span> public</li>
 			</ul>
@@ -396,19 +397,19 @@
 		<span class="method-name">
 			__construct
 		</span>
-					(<span class="var-type"></span>&nbsp;<span class="var-name">$sourceFilename</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$targetFilename</span> = <span class="var-default">null</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$_minimizeSource</span> = <span class="var-default">true</span>])
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$sourceFilename</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$targetFilename</span> = <span class="var-default">null</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$minimizeSource</span> = <span class="var-default">true</span>])
 			</div>
 	
 			<ul class="parameters">
 					<li>
-				<span class="var-type"></span>
-				<span class="var-name">$sourceFilename</span>			</li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sourceFilename</span><span class="var-description">: source filename</span>			</li>
 					<li>
-				<span class="var-type"></span>
-				<span class="var-name">$targetFilename</span>			</li>
+				<span class="var-type">string</span>
+				<span class="var-name">$targetFilename</span><span class="var-description">: build target filename</span>			</li>
 					<li>
-				<span class="var-type"></span>
-				<span class="var-name">$_minimizeSource</span>			</li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$minimizeSource</span><span class="var-description">: true to minimize source</span>			</li>
 				</ul>
 		
 			
@@ -417,7 +418,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">addExcludeClassPattern</span> (line <span class="line-number">271</span>)
+		<span class="method-title">addExcludeClassPattern</span> (line <span class="line-number">276</span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -454,7 +455,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">addIncludeClassPattern</span> (line <span class="line-number">256</span>)
+		<span class="method-title">addIncludeClassPattern</span> (line <span class="line-number">261</span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -491,7 +492,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">appendBuildSource</span> (line <span class="line-number">227</span>)
+		<span class="method-title">appendBuildSource</span> (line <span class="line-number">232</span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -527,7 +528,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">build</span> (line <span class="line-number">82</span>)
+		<span class="method-title">build</span> (line <span class="line-number">80</span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -564,7 +565,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">classIsAllowed</span> (line <span class="line-number">305</span>)
+		<span class="method-title">classIsAllowed</span> (line <span class="line-number">310</span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -600,7 +601,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getBootstrapString</span> (line <span class="line-number">106</span>)
+		<span class="method-title">getBootstrapString</span> (line <span class="line-number">111</span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -631,7 +632,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getBuildHeader</span> (line <span class="line-number">146</span>)
+		<span class="method-title">getBuildHeader</span> (line <span class="line-number">151</span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -662,7 +663,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getBuildSource</span> (line <span class="line-number">156</span>)
+		<span class="method-title">getBuildSource</span> (line <span class="line-number">161</span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -693,7 +694,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getExcludeClassesPatterns</span> (line <span class="line-number">166</span>)
+		<span class="method-title">getExcludeClassesPatterns</span> (line <span class="line-number">171</span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -724,7 +725,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getFileSource</span> (line <span class="line-number">286</span>)
+		<span class="method-title">getFileSource</span> (line <span class="line-number">291</span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -764,7 +765,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getIncludeClassesPatterns</span> (line <span class="line-number">176</span>)
+		<span class="method-title">getIncludeClassesPatterns</span> (line <span class="line-number">181</span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -795,7 +796,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getOpenPhpTag</span> (line <span class="line-number">96</span>)
+		<span class="method-title">getOpenPhpTag</span> (line <span class="line-number">101</span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -826,7 +827,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getSourceFilename</span> (line <span class="line-number">116</span>)
+		<span class="method-title">getSourceFilename</span> (line <span class="line-number">121</span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -857,7 +858,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getSourceIncludes</span> (line <span class="line-number">380</span>)
+		<span class="method-title">getSourceIncludes</span> (line <span class="line-number">385</span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -899,7 +900,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getTargetFilename</span> (line <span class="line-number">126</span>)
+		<span class="method-title">getTargetFilename</span> (line <span class="line-number">131</span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -930,7 +931,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">isMinimizeSource</span> (line <span class="line-number">136</span>)
+		<span class="method-title">isMinimizeSource</span> (line <span class="line-number">141</span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -961,7 +962,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">prependBuildSource</span> (line <span class="line-number">212</span>)
+		<span class="method-title">prependBuildSource</span> (line <span class="line-number">217</span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -997,7 +998,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">setBuildHeader</span> (line <span class="line-number">187</span>)
+		<span class="method-title">setBuildHeader</span> (line <span class="line-number">192</span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1032,7 +1033,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">setBuildSource</span> (line <span class="line-number">241</span>)
+		<span class="method-title">setBuildSource</span> (line <span class="line-number">246</span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1067,7 +1068,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">setTargetFilename</span> (line <span class="line-number">199</span>)
+		<span class="method-title">setTargetFilename</span> (line <span class="line-number">204</span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1102,7 +1103,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">stripPhpTags</span> (line <span class="line-number">328</span>)
+		<span class="method-title">stripPhpTags</span> (line <span class="line-number">333</span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1138,7 +1139,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">_assembleClosureParams</span> (line <span class="line-number">340</span>)
+		<span class="method-title">_assembleClosureParams</span> (line <span class="line-number">345</span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1173,7 +1174,7 @@
 
 
 	<p class="notes" id="credit">
-		Documentation generated on Mon, 30 Jan 2012 14:55:05 +1100 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.4</a>
+		Documentation generated on Tue, 07 Feb 2012 14:40:54 +1100 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.4</a>
 	</p>
 	</div></body>
 </html>
