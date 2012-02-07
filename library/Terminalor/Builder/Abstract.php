@@ -79,11 +79,18 @@ abstract class Terminalor_Builder_Abstract implements Terminalor_Builder_Interfa
      */
     abstract function build(array $commands = null);
 
-    public function __construct($sourceFilename, $targetFilename = null, $_minimizeSource = true)
+    /**
+     * Build given file into single portable file
+     * 
+     * @param string $sourceFilename source filename
+     * @param string $targetFilename build target filename
+     * @param boolean $minimizeSource true to minimize source 
+     */
+    public function __construct($sourceFilename, $targetFilename = null, $minimizeSource = true)
     {
         $this->_sourceFilename = $sourceFilename;
         $this->_targetFilename = $targetFilename;
-        $this->_minimizeSource = $_minimizeSource;
+        $this->_minimizeSource = $minimizeSource;
     }
 
     /**
