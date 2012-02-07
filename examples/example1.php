@@ -28,7 +28,7 @@ $terminalor['index'] =
  * @param string $to email to
  * @param string $body email body
  */
-function(Terminalor_Application_Interface $terminalor, $title, $body, $to = 'john.doh@example.com') {
+function(Terminalor_Application_Interface $terminalor, $title, $body, $to = 'john.doe@example.com') {
     $transport = new Zend_Mail_Transport_Smtp('smtp.gmail.com', array(
         'ssl'      => 'ssl',
         'port'     => '465',
@@ -37,7 +37,7 @@ function(Terminalor_Application_Interface $terminalor, $title, $body, $to = 'joh
         'password' => '******' ));
         
     $mail = new Zend_Mail();
-    $mail->setFrom('john.doh@example.com', 'John Doh');
+    $mail->setFrom('john.doe@example.com', 'John Doe');
     $mail->addTo($to);
     $mail->setSubject($title);
     $mail->setBodyText($body);
@@ -45,11 +45,6 @@ function(Terminalor_Application_Interface $terminalor, $title, $body, $to = 'joh
 
     $terminalor->getResponse()->message(sprintf('Email to `%s` has been sent', $to),
         'success');
-};
-
-$terminalor['test'] = function (Terminalor_Application_Interface $terminalor) {
-    $a = $terminalor->getResponse()->confirm('ok');
-    var_dump($a);
 };
 
 $terminalor->__toString();
